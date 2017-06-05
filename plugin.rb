@@ -2,4 +2,4 @@
 # about: Email overwriting
 # version: 0.1
 # authors: ABC
-# url: https://github.com/discourse/docker_manager
+# url: https://github.com/enggphp/email_overwrite
