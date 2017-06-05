@@ -1,1 +1,44 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      .btn {
+        -webkit-border-radius: 6;
+        -moz-border-radius: 6;
+        border-radius: 6px;
+        font-family: Arial;
+        color: #ffffff;
+        background: #ff6846;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: #3cb0fd;
+        text-decoration: none;
+      }
+    </style>
+  </head>
 
+  <body style="background: #f7f7f7; font-family:'Open Sans', Arial, sans-serif; font-size:16px; line-height: 1.35em; color: #333333">
+    <center> 
+    <a href="<%= Discourse.base_url %>">
+    <img src="<%= logo_url %>">
+    </a>
+    </center>
+
+    <div id='content' style='max-width: 640px; background: white; padding: 16px; margin: 16px auto;'>
+      <%= raw(html_body) %>
+     </div>
+
+    <div class="footer" style='max-width: 640px; text-align: center; margin: 32px auto; font-size: 12px; color: #999'>
+      <a href="<%= Discourse.base_url %>">
+      <img src="https://s3-us-west-1.amazonaws.com/cdn-prod-pinggps-com/logos/rings_100.png" style='margin: 24px; clear: both' >
+      </a>
+      <br>
+      &copy; Chirp Innovations Inc. 2017      
+      <br>
+        <a href="<%= Discourse.base_url %>">PingGPS</a>
+    </div>
+  </body>
+</html>
